@@ -1,0 +1,58 @@
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin imgReplaceText ($url, $width, $height) {
+    background-image: url($url);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    width: $width;
+    height: $height;
+}
+
+@mixin fullPageLayout($url, $x, $y, $height) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: $x $y;
+    background-size: cover;
+    height: $height;
+}
+
+@mixin text-overflowLine($lineNum) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lineNum;
+    -webkit-box-orient: vertical;
+}

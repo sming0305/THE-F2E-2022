@@ -1,0 +1,38 @@
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+body {
+  font-size: 18px;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+}
