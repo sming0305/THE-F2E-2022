@@ -206,4 +206,10 @@ export default {
 .offcanvas {
   visibility: visible;
 }
+
+.offcanvas.offcanvas-start {
+  @media (max-width: 992px) {
+    transform: translateX(-155px);
+  }
+}
 </style>
