@@ -1,31 +1,42 @@
 <template>
-  <div>
-    <p></p>
-    <div class="position-fixed traffic__Box">
-      <div class="position-relative">
-        <img src="../assets/images/main/ready_frame.png" alt="" class="z-6 position: inherit;" />
-        <img
-          src="../assets/images/main/ready_1.png"
-          alt=""
-          class="position-absolute traffic__Box__ready1"
-        />
-        <img
-          src="../assets/images/main/ready_2.png"
-          alt=""
-          class="position-absolute traffic__Box__ready2"
-        />
-        <img
-          src="../assets/images/main/ready_3.png"
-          alt=""
-          class="position-absolute traffic__Box__ready3"
-        />
-      </div>
+  <div class="position-fixed traffic__Box" ref="trafficBox">
+    <p class="text-highlight fs-16 text-center me-10" ref="ready">READY?</p>
+    <p class="text-highlight fs-16 text-center me-10" ref="go" style="display: none">GO!!</p>
+    <div class="position-relative">
+      <img src="../assets/images/main/ready_frame.png" alt="" class="z-6 position: inherit;" />
+      <img
+        src="../assets/images/main/ready_1.png"
+        alt=""
+        class="position-absolute traffic__Box__ready1"
+        ref="trafficLightGreen"
+      />
+      <img
+        src="../assets/images/main/ready_2.png"
+        alt=""
+        class="position-absolute traffic__Box__ready2"
+        ref="trafficLightYellow"
+      />
+      <img
+        src="../assets/images/main/ready_3.png"
+        alt=""
+        class="position-absolute traffic__Box__ready3"
+        ref="trafficLightRed"
+      />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import GSAPanimationStore from '../stores/GSAPanimationStore.js'
+import { mapActions } from 'pinia'
+export default {
+  methods: {
+    ...mapActions(GSAPanimationStore, ['getElement', 'handleScroll'])
+  },
+  mounted() {
+    this.getElement(1, this.$refs)
+  }
+}
 </script>
 
 <style lang="scss" scoped>
