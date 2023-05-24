@@ -1,26 +1,26 @@
 <template>
-  <div class="position-fixed traffic__Box" ref="trafficBox">
-    <p class="text-highlight fs-16 text-center me-10" ref="ready">READY?</p>
-    <p class="text-highlight fs-16 text-center me-10" ref="go" style="display: none">GO!!</p>
+  <div class="position-fixed d-flex flex-column justify-content-end traffic__Box" ref="trafficBox" data-sectionNum="1">
+    <p class="text-highlight fs-7 fs-lg-16 text-center me-5 me-lg-10" ref="ready" data-sectionNum="1">READY?</p>
+    <p class="text-highlight fs-7 fs-lg-16 text-center me-5 me-lg-10" ref="go" data-sectionNum="1" style="display: none">GO!!</p>
     <div class="position-relative">
       <img src="../assets/images/main/ready_frame.png" alt="" class="z-6 position: inherit;" />
       <img
         src="../assets/images/main/ready_1.png"
         alt=""
         class="position-absolute traffic__Box__ready1"
-        ref="trafficLightGreen"
+        ref="trafficLightGreen" data-sectionNum="1"
       />
       <img
         src="../assets/images/main/ready_2.png"
         alt=""
         class="position-absolute traffic__Box__ready2"
-        ref="trafficLightYellow"
+        ref="trafficLightYellow" data-sectionNum="1"
       />
       <img
         src="../assets/images/main/ready_3.png"
         alt=""
         class="position-absolute traffic__Box__ready3"
-        ref="trafficLightRed"
+        ref="trafficLightRed" data-sectionNum="1"
       />
     </div>
   </div>
@@ -34,7 +34,7 @@ export default {
     ...mapActions(GSAPanimationStore, ['getElement', 'handleScroll'])
   },
   mounted() {
-    this.getElement(1, this.$refs)
+    this.getElement(this.$refs)
   }
 }
 </script>
@@ -44,11 +44,11 @@ export default {
   right: 0;
   top: 533px;
   width: 110px;
-  height: 47.13px;
+  height: 68.13px;
   @media (min-width: 1200px) {
     top: 503px;
     width: 275px;
-    height: 108px;
+    height: 156px;
   }
 
   &__ready1 {

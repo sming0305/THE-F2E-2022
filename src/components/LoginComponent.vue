@@ -5,7 +5,7 @@
       alt="logo"
       class="ms-20 mt-15 nav__pc__logo"
       style="height: 148px; width: 200px; visibility: hidden;"
-      ref="navPcLogo"
+      ref="navPcLogo" data-sectionNum="1"
     />
     <div class="d-block d-lg-none me-5"></div>
     <img
@@ -47,7 +47,7 @@ export default {
     ...mapActions(GSAPanimationStore, ['getElement'])
   },
   mounted() {
-    this.getElement(1, this.$refs)
+    this.getElement(this.$refs)
   }
 }
 </script>

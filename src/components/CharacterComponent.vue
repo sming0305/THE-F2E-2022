@@ -1,18 +1,54 @@
 <template>
   <div class="container fixed-bottom">
     <div class="d-flex justify-content-center">
-      <div style="max-width: 1175px">
+      <div
+        class="position-relative"
+        style="max-width: 1175px"
+        ref="characterBox"
+        data-sectionNum="2"
+      >
+        <img
+          src="../assets/images/bg/bg_decorate_09.png"
+          alt=""
+          class="position-absolute grace grace__left z--6"
+          style="visibility: hidden"
+          ref="graceLeft"
+          data-sectionNum="2"
+        />
         <div class="d-flex justify-content-center align-items-end character">
           <div class="character--size1 z-12">
-            <img src="../assets/images/character/character_f2e.gif" alt="" />
+            <img
+              src="../assets/images/character/character_f2e.gif"
+              alt=""
+              ref="characterLeft"
+              data-sectionNum="2"
+            />
           </div>
           <div class="character--size2 z-12">
-            <img src="../assets/images/character/character_ui.gif" alt="" />
+            <img
+              src="../assets/images/character/character_ui.gif"
+              alt=""
+              ref="characterCenter"
+              data-sectionNum="2"
+            />
           </div>
           <div class="character--size3 z-12">
-            <img src="../assets/images/character/character_team.gif" alt="" />
+            <img
+              src="../assets/images/character/character_team.gif"
+              alt=""
+              ref="characterRight"
+              data-sectionNum="2"
+            />
           </div>
         </div>
+        <img
+          src="../assets/images/bg/bg_decorate_09.png"
+          alt=""
+          class="position-absolute grace grace__right z--6"
+          style="visibility: hidden"
+          ref="graceRight"
+          data-sectionNum="2"
+        />
         <img src="../assets/images/main/road.png" class="z-6" alt="" />
       </div>
     </div>
@@ -20,7 +56,17 @@
 </template>
 
 <script>
-export default {}
+import GSAPanimationStore from '../stores/GSAPanimationStore.js'
+import { mapActions } from 'pinia'
+
+export default {
+  methods: {
+    ...mapActions(GSAPanimationStore, ['getElement'])
+  },
+  mounted() {
+    this.getElement(this.$refs)
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -40,6 +86,24 @@ export default {}
   &--size3 {
     max-width: 302px;
     max-height: 454px;
+  }
+}
+
+.grace {
+  width: 230px;
+  height: 214px;
+  transform: translate(0,200px);
+  
+
+  &__left {
+    left: -8%;
+    bottom: -10%;
+    transform: scaleX(-1) translate(0,200px);
+  }
+
+  &__right {
+    right: -8%;
+    bottom: -10%;
   }
 }
 </style>
