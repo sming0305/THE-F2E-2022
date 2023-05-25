@@ -1,6 +1,7 @@
 <template>
   <div
     class="mx-auto position-relative sectionTitleBox pb-5"
+    :class="mobileActive"
     :ref="`section${sectionNum}Title`"
     :data-sectionNum="sectionNum"
   >
@@ -11,7 +12,8 @@
     :ref="`section${sectionNum}Subtitle`"
     :data-sectionNum="sectionNum"
   >
-    {{ subtitle }}
+    {{ subtitle }} <br />
+    {{ subtitle2 }}
   </h5>
 </template>
 
@@ -20,7 +22,7 @@ import GSAPanimationStore from '@/stores/GSAPanimationStore.js'
 import { mapActions } from 'pinia'
 
 export default {
-  props: ['title', 'subtitle', 'sectionNum'],
+  props: ['title', 'subtitle', 'sectionNum', 'subtitle2', 'mobileActive'],
   methods: {
     ...mapActions(GSAPanimationStore, ['getElement'])
   },

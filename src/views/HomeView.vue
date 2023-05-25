@@ -80,7 +80,9 @@
     <sectionTitleComponent :title="'你是否也有以下困擾？'" :section-Num="2"></sectionTitleComponent>
     <div class="container">
       <div class="pt-20">
-        <ul class="d-flex flex-column flex-lg-row align-items-center justify-content-between text-center text-highlight">
+        <ul
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-between text-center text-highlight"
+        >
           <li class="me-10" ref="question1" data-sectionNum="2">
             <H4 class="mb-2">羨慕別人的酷酷網頁動畫？</H4>
             <img src="../assets/images/main/question_1.png" alt="" class="d-none d-lg-block" />
@@ -115,7 +117,7 @@
       </div>
     </div>
   </section>
-  <section class="vh-100" ref="section3Box" data-sectionNum="3">
+  <section ref="section3Box" data-sectionNum="3">
     <div class="pt-20">
       <sectionTitleComponent
         :title="'本屆主題：互動式網頁設計'"
@@ -144,6 +146,252 @@
           </div>
         </li>
       </ul>
+    </div>
+  </section>
+  <section ref="section4Box" data-sectionNum="4">
+    <sectionTitleComponent
+      :title="'年度最強合作，三大主題來襲'"
+      :subtitle="'各路廠商強強聯手'"
+      :subtitle2="'共同設計出接地氣的網頁互動挑戰關卡'"
+      :section-Num="4"
+    ></sectionTitleComponent>
+    <div class="container">
+      <ul class="mb-30 mb-lg-0">
+        <li class="d-block d-lg-flex mb-20 mb-lg-0" ref="week1Item" data-sectionNum="4">
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <img src="../assets/images/main/week_1.png" alt="" class="section4Img me-0 me-lg-20" />
+            <div class="d-flex d-lg-block flex-column align-items-center">
+              <h2 class="text-highlight">WEEK 1</h2>
+              <h3 class="text-primary mb-6">The F2E 活動網站設計</h3>
+              <div class="d-flex flex-column align-items-center flex-lg-row mb-6">
+                <p
+                  class="text-secondary--dark px-5 py-1 rounded-5 border-2 border border-secondary--dark me-0 me-lg-5 mb-8 mb-lg-0"
+                >
+                  Parallax Scrolling
+                </p>
+                <p
+                  class="text-secondary--dark px-5 py-1 rounded-5 border-2 border border-secondary--dark mb-2 mb-lg-0"
+                >
+                  #版塊設計
+                </p>
+              </div>
+              <a
+                href=""
+                class="text-white bg-secondary--dark px-6 py-2 rounded-5 fw-normal fw-normal"
+                >查看關卡細節</a
+              >
+            </div>
+          </div>
+        </li>
+        <li
+          class="d-block d-lg-flex justify-content-end mb-20 mb-lg-0"
+          ref="week2Item"
+          data-sectionNum="4"
+        >
+          <div class="d-flex flex-column flex-lg-row-reverse align-items-center">
+            <img src="../assets/images/main/week_2.png" alt="" class="section4Img" />
+            <div>
+              <h2 class="text-highlight text-center text-lg-end">WEEK 2</h2>
+              <h3 class="text-primary mb-6">今晚，我想來點點簽</h3>
+              <div
+                class="d-flex flex-column align-items-center flex-lg-row justify-content-end mb-6"
+              >
+                <p
+                  class="text-secondary--dark px-5 py-1 rounded-5 border-2 border border-secondary--dark me-0 me-lg-5 mb-8 mb-lg-0"
+                >
+                  Canvas
+                </p>
+                <p
+                  class="text-secondary--dark px-5 py-1 rounded-5 border-2 border border-secondary--dark mb-2 mb-lg-0"
+                >
+                  #凱鈿行動科技
+                </p>
+              </div>
+              <div class="d-flex justify-content-center justify-content-lg-end">
+                <a
+                  href=""
+                  class="text-white bg-secondary--dark px-6 py-2 rounded-5 fw-normal fw-normal"
+                  >查看關卡細節</a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="d-block d-lg-flex" ref="week3Item" data-sectionNum="4">
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <img src="../assets/images/main/week_3.png" alt="" class="section4Img me-0 me-lg-20" />
+            <div class="d-flex d-lg-block flex-column align-items-center">
+              <h2 class="text-highlight">WEEK 3</h2>
+              <h3 class="text-primary mb-6">Scrum 新手村</h3>
+              <div class="d-flex flex-column align-items-center flex-lg-row mb-6">
+                <p
+                  class="text-secondary--dark px-5 py-1 rounded-5 border-2 border border-secondary--dark me-0 me-lg-5 mb-8 mb-lg-0"
+                >
+                  JS draggable
+                </p>
+                <p
+                  class="text-secondary--dark px-5 py-1 rounded-5 border-2 border border-secondary--dark mb-2 mb-lg-0"
+                >
+                  #鈦坦科技
+                </p>
+              </div>
+              <a
+                href=""
+                class="text-white bg-secondary--dark px-6 py-2 rounded-5 fw-normal fw-normal"
+                >查看關卡細節</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="pt-lg-30" ref="section5Box" data-sectionNum="5" style="overflow: hidden">
+    <sectionTitleComponent
+      :title="'重要時程'"
+      :section-Num="5"
+      :mobileActive="'d-block d-lg-none'"
+    ></sectionTitleComponent>
+    <div class="container mt-lg-5 pt-lg-5">
+      <ul
+        class="d-flex flex-column align-items-center align-items-lg-start flex-lg-row justify-content-around mb-15"
+      >
+        <li class="bg-secondary z-6 pb-10" ref="dateInfo1" data-sectionNum="5">
+          <JoinButtonComponent
+            class="mb-7"
+            :finger="true"
+            :mobileHidden="false"
+          ></JoinButtonComponent>
+          <h2 class="text-highlight mb-6 text-center">SIGN UP</h2>
+          <h4 class="bg-primary text-white rounded-5 text-center mb-7 py-4 px-14">10/13 - 11/6</h4>
+          <p class="text-secondary--dark text-center">截止前可修改報名組別</p>
+        </li>
+        <li class="pt-20 bg-secondary z-6" ref="dateInfo2" data-sectionNum="5">
+          <img
+            src="../assets/images/main/date_start.png"
+            class="mb-7 mx-auto d-block"
+            alt=""
+            style="width: 140px; height: 108px"
+          />
+          <h2 class="text-highlight mb-6 text-center">START</h2>
+          <h4 class="bg-primary text-white rounded-5 text-center mb-7 py-4 px-14">10/31 - 11/28</h4>
+          <p class="text-secondary--dark text-center mb-3">10/31(一) UI、團體組開賽</p>
+          <p class="text-secondary--dark text-center">11/7(一) 前端組開賽</p>
+        </li>
+        <li class="pt-20 bg-secondary z-6" ref="dateInfo3" data-sectionNum="5">
+          <img
+            src="../assets/images/main/date_upload.png"
+            class="mb-7 mx-auto d-block"
+            alt=""
+            style="width: 140px; height: 108px"
+          />
+          <h2 class="text-highlight mb-6 text-center">UPLOAD</h2>
+          <h4 class="bg-primary text-white rounded-5 text-center mb-7 py-4 px-14">10/31 - 11/28</h4>
+          <p class="text-secondary--dark text-center mb-3">依賽程登錄作品</p>
+          <p class="text-highlight text-center">額外競賽： 主題豐厚獎金等著你</p>
+        </li>
+      </ul>
+      <div class="d-none d-lg-block" ref="dateLineBox" data-sectionNum="5">
+        <div class="d-flex justify-content-around position-relative" style="height: 1px">
+          <img
+            class="position-absolute"
+            src="../assets/images/main/date_weekLine.png"
+            alt=""
+            style="max-width: 32px; max-height: 140px; top: -80px; left: 15%"
+            ref="weekLine1"
+            data-sectionNum="5"
+          />
+          <img
+            class="position-absolute"
+            src="../assets/images/main/date_weekLine.png"
+            alt=""
+            style="max-width: 32px; max-height: 140px; top: -120px"
+            ref="weekLine2"
+            data-sectionNum="5"
+          />
+          <img
+            class="position-absolute"
+            src="../assets/images/main/date_weekLine.png"
+            alt=""
+            style="max-width: 32px; max-height: 140px; top: -80px; right: 15%"
+            ref="weekLine3"
+            data-sectionNum="5"
+          />
+        </div>
+        <div style="max-width: 1440px" ref="dateLine" data-sectionNum="5" class="position-relative">
+          <div
+            class="position-absolute h-100 w-100 bg-secondary z-6"
+            ref="dateLineShadow"
+            data-sectionNum="5"
+          ></div>
+          <img src="../assets/images/main/date_line.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section ref="section6Box" data-sectionNum="6" style="overflow: hidden">
+    <div class="container pt-30">
+      <div class="pt-30 position-relative">
+        <img
+          src="../assets/images/bg/bg_decorate_03.png"
+          alt=""
+          class="position-absolute d-none d-lg-block"
+          style="width: 368px; height: 178px; left: -50%; top: 140%"
+          ref="leftCloud"
+          data-sectionNum="6"
+        />
+
+        <h2 class="text-highlight text-center pt-20" ref="title" data-sectionNum="6">
+          區區修煉已經無法滿足了嗎？
+        </h2>
+        <img
+          src="../assets/images/bg/bg_decorate_07.png"
+          alt=""
+          class="position-absolute d-none d-lg-block"
+          style="width: 450px; height: 333px; right: -50%"
+          ref="rightCloud"
+          data-sectionNum="6"
+        />
+      </div>
+    </div>
+  </section>
+  <section ref="section7Box" data-sectionNum="7" style="overflow: hidden" class="pt-5">
+    <sectionTitleComponent
+      :title="'還有比賽等著你！'"
+      :section-Num="7"
+    ></sectionTitleComponent>
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center" ref="infoBox" data-sectionNum="7">
+        <div class="me-lg-30 position-relative mb-12 mb-lg-0" style="max-width: 375px; height: 375px">
+          <img src="../assets/images/main/award.png" alt="" />
+          <img src="" alt="" class="position-absolute" />
+        </div>
+        <ul>
+          <li class="mb-12">
+            <h4 class="text-highlight mb-12">評審機制</h4>
+            <ul class="text-primary fw-normal">
+              <li>初選： 將由六角學院前端、UI 評審進行第一波篩選。</li>
+              <li>
+                決選： 由六角學院與贊助廠商討論，進行最後篩選，並於 12/30(五)
+                由評審進行直播公布名單！
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="text-highlight mb-12">獎項</h4>
+            <ul class="text-primary fw-normal">
+              <li>1. 初選佳作 共六十位 數位獎狀</li>
+              <li>
+                2. 個人企業獎 共六位 <span class="text-highlight fw-bold">NTD 3,000 /位</span>
+              </li>
+              <li>
+                3. 團體企業獎 共三組 <span class="text-highlight fw-bold">NTD 10,000 /組</span>
+              </li>
+              <li>4. 以上皆提供完賽數位獎狀</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <CharacterComponent />
@@ -239,6 +487,16 @@ export default {
     height: 255px;
     right: -10%;
     top: 45%;
+  }
+}
+
+.section4Img {
+  width: 200px;
+  height: 135px;
+
+  @media (min-width: 992px) {
+    width: 280px;
+    height: 190px;
   }
 }
 </style>

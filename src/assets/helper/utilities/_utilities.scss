@@ -2,11 +2,11 @@
   right: -20px;
 }
 
-.z--12{
+.z--12 {
   z-index: -12;
 }
 
-.z--6{
+.z--6 {
   z-index: -6;
 }
 
@@ -14,253 +14,254 @@
   z-index: 6;
 }
 
-.z-12{
+.z-12 {
   z-index: 12;
 }
 
+.fw-normal {
+  font-weight: 500 !important;
+}
 
 @include sm {
   .fs-sm-1 {
-      font-size: $font-size-base*0.125 !important;
+    font-size: $font-size-base * 0.125 !important;
   }
 
   .fs-sm-2 {
-      font-size: $font-size-base*0.25 !important;
+    font-size: $font-size-base * 0.25 !important;
   }
 
   .fs-sm-3 {
-      font-size: $font-size-base*0.375 !important;
+    font-size: $font-size-base * 0.375 !important;
   }
 
   .fs-sm-4 {
-      font-size: $font-size-base*0.5 !important;
+    font-size: $font-size-base * 0.5 !important;
   }
 
   .fs-sm-5 {
-      font-size: $font-size-base*0.625 !important;
+    font-size: $font-size-base * 0.625 !important;
   }
 
   .fs-sm-6 {
-      font-size: $font-size-base*0.75 !important;
+    font-size: $font-size-base * 0.75 !important;
   }
 
   .fs-sm-7 {
-      font-size: $font-size-base*0.875 !important;
+    font-size: $font-size-base * 0.875 !important;
   }
 
   .fs-sm-8 {
-      font-size: $font-size-base !important;
+    font-size: $font-size-base !important;
   }
 
   .fs-sm-9 {
-      font-size: $font-size-base*1.125 !important;
+    font-size: $font-size-base * 1.125 !important;
   }
 
   .fs-sm-10 {
-      font-size: $font-size-base*1.25 !important;
+    font-size: $font-size-base * 1.25 !important;
   }
 
   .fs-sm-11 {
-      font-size: $font-size-base*1.375 !important;
+    font-size: $font-size-base * 1.375 !important;
   }
 
   .fs-sm-12 {
-      font-size: $font-size-base*1.5 !important;
+    font-size: $font-size-base * 1.5 !important;
   }
 
   .fs-sm-13 {
-      font-size: $font-size-base*1.625 !important;
+    font-size: $font-size-base * 1.625 !important;
   }
 
   .fs-sm-14 {
-      font-size: $font-size-base*1.75 !important;
+    font-size: $font-size-base * 1.75 !important;
   }
 
   .fs-sm-15 {
-      font-size: $font-size-base*1.875 !important;
+    font-size: $font-size-base * 1.875 !important;
   }
 
   .fs-sm-16 {
-      font-size: $font-size-base*2 !important;
+    font-size: $font-size-base * 2 !important;
   }
 
   .fs-sm-17 {
-      font-size: $font-size-base*2.125 !important;
+    font-size: $font-size-base * 2.125 !important;
   }
 
   .fs-sm-18 {
-      font-size: $font-size-base*2.25 !important;
+    font-size: $font-size-base * 2.25 !important;
   }
 
   .fs-sm-19 {
-      font-size: $font-size-base*2.375 !important;
+    font-size: $font-size-base * 2.375 !important;
   }
 
   .fs-sm-20 {
-      font-size: $font-size-base*2.5 !important;
+    font-size: $font-size-base * 2.5 !important;
   }
 
   .fs-sm-21 {
-      font-size: $font-size-base*2.625 !important;
+    font-size: $font-size-base * 2.625 !important;
   }
 
   .fs-sm-22 {
-      font-size: $font-size-base*2.75 !important;
+    font-size: $font-size-base * 2.75 !important;
   }
 
   .fs-sm-23 {
-      font-size: $font-size-base*2.875 !important;
+    font-size: $font-size-base * 2.875 !important;
   }
 
   .fs-sm-24 {
-      font-size: $font-size-base*3 !important;
+    font-size: $font-size-base * 3 !important;
   }
 
   .fs-sm-25 {
-      font-size: $font-size-base*3.125 !important;
+    font-size: $font-size-base * 3.125 !important;
   }
 
   .fs-sm-26 {
-      font-size: $font-size-base*3.25 !important;
+    font-size: $font-size-base * 3.25 !important;
   }
 
   .fs-sm-27 {
-      font-size: $font-size-base*3.375 !important;
+    font-size: $font-size-base * 3.375 !important;
   }
 
   .fs-sm-28 {
-      font-size: $font-size-base*3.5 !important;
+    font-size: $font-size-base * 3.5 !important;
   }
 
   .fs-sm-29 {
-      font-size: $font-size-base*3.625 !important;
+    font-size: $font-size-base * 3.625 !important;
   }
 
   .fs-sm-30 {
-      font-size: $font-size-base*3.75 !important;
+    font-size: $font-size-base * 3.75 !important;
   }
 }
 
-
-
 @include lg {
   .fs-lg-1 {
-      font-size: $font-size-base*0.125 !important;
+    font-size: $font-size-base * 0.125 !important;
   }
 
   .fs-lg-2 {
-      font-size: $font-size-base*0.25 !important;
+    font-size: $font-size-base * 0.25 !important;
   }
 
   .fs-lg-3 {
-      font-size: $font-size-base*0.375 !important;
+    font-size: $font-size-base * 0.375 !important;
   }
 
   .fs-lg-4 {
-      font-size: $font-size-base*0.5 !important;
+    font-size: $font-size-base * 0.5 !important;
   }
 
   .fs-lg-5 {
-      font-size: $font-size-base*0.625 !important;
+    font-size: $font-size-base * 0.625 !important;
   }
 
   .fs-lg-6 {
-      font-size: $font-size-base*0.75 !important;
+    font-size: $font-size-base * 0.75 !important;
   }
 
   .fs-lg-7 {
-      font-size: $font-size-base*0.875 !important;
+    font-size: $font-size-base * 0.875 !important;
   }
 
   .fs-lg-8 {
-      font-size: $font-size-base !important;
+    font-size: $font-size-base !important;
   }
 
   .fs-lg-9 {
-      font-size: $font-size-base*1.125 !important;
+    font-size: $font-size-base * 1.125 !important;
   }
 
   .fs-lg-10 {
-      font-size: $font-size-base*1.25 !important;
+    font-size: $font-size-base * 1.25 !important;
   }
 
   .fs-lg-11 {
-      font-size: $font-size-base*1.375 !important;
+    font-size: $font-size-base * 1.375 !important;
   }
 
   .fs-lg-12 {
-      font-size: $font-size-base*1.5 !important;
+    font-size: $font-size-base * 1.5 !important;
   }
 
   .fs-lg-13 {
-      font-size: $font-size-base*1.625 !important;
+    font-size: $font-size-base * 1.625 !important;
   }
 
   .fs-lg-14 {
-      font-size: $font-size-base*1.75 !important;
+    font-size: $font-size-base * 1.75 !important;
   }
 
   .fs-lg-15 {
-      font-size: $font-size-base*1.875 !important;
+    font-size: $font-size-base * 1.875 !important;
   }
 
   .fs-lg-16 {
-      font-size: $font-size-base*2 !important;
+    font-size: $font-size-base * 2 !important;
   }
 
   .fs-lg-17 {
-      font-size: $font-size-base*2.125 !important;
+    font-size: $font-size-base * 2.125 !important;
   }
 
   .fs-lg-18 {
-      font-size: $font-size-base*2.25 !important;
+    font-size: $font-size-base * 2.25 !important;
   }
 
   .fs-lg-19 {
-      font-size: $font-size-base*2.375 !important;
+    font-size: $font-size-base * 2.375 !important;
   }
 
   .fs-lg-20 {
-      font-size: $font-size-base*2.5 !important;
+    font-size: $font-size-base * 2.5 !important;
   }
 
   .fs-lg-21 {
-      font-size: $font-size-base*2.625 !important;
+    font-size: $font-size-base * 2.625 !important;
   }
 
   .fs-lg-22 {
-      font-size: $font-size-base*2.75 !important;
+    font-size: $font-size-base * 2.75 !important;
   }
 
   .fs-lg-23 {
-      font-size: $font-size-base*2.875 !important;
+    font-size: $font-size-base * 2.875 !important;
   }
 
   .fs-lg-24 {
-      font-size: $font-size-base*3 !important;
+    font-size: $font-size-base * 3 !important;
   }
 
   .fs-lg-25 {
-      font-size: $font-size-base*3.125 !important;
+    font-size: $font-size-base * 3.125 !important;
   }
 
   .fs-lg-26 {
-      font-size: $font-size-base*3.25 !important;
+    font-size: $font-size-base * 3.25 !important;
   }
 
   .fs-lg-27 {
-      font-size: $font-size-base*3.375 !important;
+    font-size: $font-size-base * 3.375 !important;
   }
 
   .fs-lg-28 {
-      font-size: $font-size-base*3.5 !important;
+    font-size: $font-size-base * 3.5 !important;
   }
 
   .fs-lg-29 {
-      font-size: $font-size-base*3.625 !important;
+    font-size: $font-size-base * 3.625 !important;
   }
 
   .fs-lg-30 {
-      font-size: $font-size-base*3.75 !important;
+    font-size: $font-size-base * 3.75 !important;
   }
 }
