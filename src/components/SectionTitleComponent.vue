@@ -8,7 +8,7 @@
     <h2 class="text-primary text-center py-8 pb-15 px-lg-30 pt-lg-15 pb-20">{{ title }}</h2>
   </div>
   <h5
-    class="text-center mb-30 text-secondary--dark"
+    class="text-center mb-15 text-secondary--dark"
     :ref="`section${sectionNum}Subtitle`"
     :data-sectionNum="sectionNum"
   >

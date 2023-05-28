@@ -1,26 +1,46 @@
 <template>
-  <div class="position-fixed d-flex flex-column justify-content-end traffic__Box" ref="trafficBox" data-sectionNum="1">
-    <p class="text-highlight fs-7 fs-lg-16 text-center me-5 me-lg-10" ref="ready" data-sectionNum="1">READY?</p>
-    <p class="text-highlight fs-7 fs-lg-16 text-center me-5 me-lg-10" ref="go" data-sectionNum="1" style="display: none">GO!!</p>
+  <div
+    class="position-fixed d-flex flex-column justify-content-end traffic__Box"
+    ref="trafficBox"
+    data-sectionNum="1"
+  >
+    <p
+      class="text-highlight fs-7 fs-lg-16 text-center me-5 me-lg-10"
+      ref="ready"
+      data-sectionNum="1"
+    >
+      READY?
+    </p>
+    <p
+      class="text-highlight fs-7 fs-lg-16 text-center me-5 me-lg-10"
+      ref="go"
+      data-sectionNum="1"
+      style="display: none"
+    >
+      GO!!
+    </p>
     <div class="position-relative">
-      <img src="../assets/images/main/ready_frame.png" alt="" class="z-6 position: inherit;" />
+      <img src="../assets/images/main/ready_frame.png" alt="signFrame" class="z-6 position: inherit;" />
       <img
         src="../assets/images/main/ready_1.png"
-        alt=""
+        alt="greenLight"
         class="position-absolute traffic__Box__ready1"
-        ref="trafficLightGreen" data-sectionNum="1"
+        ref="trafficLightGreen"
+        data-sectionNum="1"
       />
       <img
         src="../assets/images/main/ready_2.png"
-        alt=""
+        alt="yellowLight"
         class="position-absolute traffic__Box__ready2"
-        ref="trafficLightYellow" data-sectionNum="1"
+        ref="trafficLightYellow"
+        data-sectionNum="1"
       />
       <img
         src="../assets/images/main/ready_3.png"
-        alt=""
+        alt="redLight"
         class="position-absolute traffic__Box__ready3"
-        ref="trafficLightRed" data-sectionNum="1"
+        ref="trafficLightRed"
+        data-sectionNum="1"
       />
     </div>
   </div>

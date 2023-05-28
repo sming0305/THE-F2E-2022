@@ -9,26 +9,26 @@
       >
         <img
           src="../assets/images/main/start.png"
-          alt=""
+          alt="startLine"
           class="z--6"
           style="object-fit: contain"
         />
       </div>
       <div class="position-absolute cloud__left z--12" ref="cloudLeft" data-sectionNum="1">
-        <img src="../assets/images/bg/bg_decorate_01.png" alt="" />
+        <img src="../assets/images/bg/bg_decorate_01.png" alt="cloud" />
       </div>
       <div class="position-absolute cloud__right z--12" ref="cloudRight" data-sectionNum="1">
-        <img src="../assets/images/bg/bg_decorate_05.png" alt="" />
+        <img src="../assets/images/bg/bg_decorate_05.png" alt="cloud" />
       </div>
       <div class="d-flex justify-content-center" ref="sectionTextArea" data-sectionNum="1">
         <div class="d-flex flex-column pt-5" style="max-width: 1175px">
           <div class="ps-6">
             <div class="mt-7 d-lg-none d-block mb-8 mx-auto" style="width: 253px; height: 189px">
-              <img src="../assets/images/logo/logo.png" alt="" />
+              <img src="../assets/images/logo/logo.png" alt="TheF2eLogo" />
             </div>
           </div>
           <div class="mt-7 d-none d-lg-block mx-auto" style="width: 680px; height: 236.03px">
-            <img src="../assets/images/logo/logo_text.png" alt="" />
+            <img src="../assets/images/logo/logo_text.png" alt="TheF2eLogo-text" />
           </div>
           <h1
             class="bg-highlight px-8 py-2 px-lg-20 py-lg-4 text-white text-center mb-10 mb-lg-24 mx-auto rounded-5"
@@ -76,7 +76,7 @@
       </div>
     </div>
   </section>
-  <section ref="section2Box" data-sectionNum="2">
+  <section ref="section2Box" data-sectionNum="2" style="overflow: hidden">
     <sectionTitleComponent :title="'你是否也有以下困擾？'" :section-Num="2"></sectionTitleComponent>
     <div class="container">
       <div class="pt-20">
@@ -85,30 +85,42 @@
         >
           <li class="me-10" ref="question1" data-sectionNum="2">
             <H4 class="mb-2">羨慕別人的酷酷網頁動畫？</H4>
-            <img src="../assets/images/main/question_1.png" alt="" class="d-none d-lg-block" />
+            <img
+              src="../assets/images/main/question_1.png"
+              alt="question1"
+              class="d-none d-lg-block"
+            />
             <img
               src="../assets/images/main/question_1_m.png"
-              alt=""
+              alt="question1"
               class="d-block d-lg-none"
               style="max-width: 335px; height: 262px"
             />
           </li>
           <li class="me-10" ref="question2" data-sectionNum="2">
             <H4 class="mb-2">滿足不了同事的許願？</H4>
-            <img class="d-none d-lg-block" src="../assets/images/main/question_2.png" alt="" />
+            <img
+              class="d-none d-lg-block"
+              src="../assets/images/main/question_2.png"
+              alt="question2"
+            />
             <img
               class="d-block d-lg-none"
               src="../assets/images/main/question_2.png"
-              alt=""
+              alt="question2"
               style="max-width: 335px; height: 262px"
             />
           </li>
           <li ref="question3" data-sectionNum="2">
             <H4 class="mb-2">動畫技能樹太雜無從下手？</H4>
-            <img src="../assets/images/main/question_3.png" alt="" class="d-none d-lg-block" />
+            <img
+              src="../assets/images/main/question_3.png"
+              alt="question3"
+              class="d-none d-lg-block"
+            />
             <img
               src="../assets/images/main/question_3_m.png"
-              alt=""
+              alt="question3"
               class="d-block d-lg-none"
               style="max-width: 335px; height: 262px"
             />
@@ -117,7 +129,7 @@
       </div>
     </div>
   </section>
-  <section ref="section3Box" data-sectionNum="3">
+  <section ref="section3Box" data-sectionNum="3" style="overflow: hidden" class="pb-20">
     <div class="pt-20">
       <sectionTitleComponent
         :title="'本屆主題：互動式網頁設計'"
@@ -127,22 +139,46 @@
     </div>
     <div class="container">
       <ul class="row offset-lg-1" ref="section3List" data-sectionNum="3">
-        <li class="col-lg-3 ms-lg-12 me-lg-30 d-flex justify-content-center d-lg-block">
-          <JoinButtonComponent :finger="false" :textH4="'前端工程師'"></JoinButtonComponent>
+        <li
+          class="col-lg-3 ms-lg-12 me-lg-30 d-flex justify-content-center d-lg-block"
+          ref="item1"
+          data-sectionNum="3"
+        >
+          <JoinButtonComponent
+            :link="'https://2022.thef2e.com/signup'"
+            :finger="false"
+            :textH4="'前端工程師'"
+          ></JoinButtonComponent>
           <div class="d-block d-lg-none" style="max-width: 157px; max-height: 270px">
-            <img src="../assets/images/character/character_f2e.png" alt="" />
+            <img src="../assets/images/character/character_f2e.png" alt="character_f2e" />
           </div>
         </li>
-        <li class="col-lg-3 me-lg-30 d-flex justify-content-center d-lg-block">
+        <li
+          class="col-lg-3 me-lg-30 d-flex justify-content-center d-lg-block"
+          ref="item2"
+          data-sectionNum="3"
+        >
           <div class="d-block d-lg-none" style="max-width: 157px; max-height: 255px">
-            <img src="../assets/images/character/character_ui.png" alt="" />
+            <img src="../assets/images/character/character_ui.png" alt="character_ui" />
           </div>
-          <JoinButtonComponent :finger="false" :textH4="'UI設計師'"></JoinButtonComponent>
+          <JoinButtonComponent
+            :link="'https://2022.thef2e.com/signup'"
+            :finger="false"
+            :textH4="'UI設計師'"
+          ></JoinButtonComponent>
         </li>
-        <li class="col-lg-3 d-flex justify-content-center d-lg-block">
-          <JoinButtonComponent :finger="false" :textH4="'團體組(UI+前端)'"></JoinButtonComponent>
+        <li
+          class="col-lg-3 d-flex justify-content-center d-lg-block"
+          ref="item3"
+          data-sectionNum="3"
+        >
+          <JoinButtonComponent
+            :link="'https://2022.thef2e.com/signup'"
+            :finger="false"
+            :textH4="'團體組(UI+前端)'"
+          ></JoinButtonComponent>
           <div class="d-block d-lg-none" style="max-width: 158px; max-height: 238px">
-            <img src="../assets/images/character/character_team.png" alt="" />
+            <img src="../assets/images/character/character_team.png" alt="character_team" />
           </div>
         </li>
       </ul>
@@ -159,7 +195,11 @@
       <ul class="mb-30 mb-lg-0">
         <li class="d-block d-lg-flex mb-20 mb-lg-0" ref="week1Item" data-sectionNum="4">
           <div class="d-flex flex-column flex-lg-row align-items-center">
-            <img src="../assets/images/main/week_1.png" alt="" class="section4Img me-0 me-lg-20" />
+            <img
+              src="../assets/images/main/week_1.png"
+              alt="dateLineWeek1"
+              class="section4Img me-0 me-lg-20"
+            />
             <div class="d-flex d-lg-block flex-column align-items-center">
               <h2 class="text-highlight">WEEK 1</h2>
               <h3 class="text-primary mb-6">The F2E 活動網站設計</h3>
@@ -176,7 +216,8 @@
                 </p>
               </div>
               <a
-                href=""
+                href="https://2022.thef2e.com/news/week1"
+                target="_blank"
                 class="text-white bg-secondary--dark px-6 py-2 rounded-5 fw-normal fw-normal"
                 >查看關卡細節</a
               >
@@ -189,7 +230,7 @@
           data-sectionNum="4"
         >
           <div class="d-flex flex-column flex-lg-row-reverse align-items-center">
-            <img src="../assets/images/main/week_2.png" alt="" class="section4Img" />
+            <img src="../assets/images/main/week_2.png" alt="dateLineWeek2" class="section4Img" />
             <div>
               <h2 class="text-highlight text-center text-lg-end">WEEK 2</h2>
               <h3 class="text-primary mb-6">今晚，我想來點點簽</h3>
@@ -209,7 +250,8 @@
               </div>
               <div class="d-flex justify-content-center justify-content-lg-end">
                 <a
-                  href=""
+                  href="https://2022.thef2e.com/news/week2"
+                  target="_blank"
                   class="text-white bg-secondary--dark px-6 py-2 rounded-5 fw-normal fw-normal"
                   >查看關卡細節</a
                 >
@@ -219,7 +261,11 @@
         </li>
         <li class="d-block d-lg-flex" ref="week3Item" data-sectionNum="4">
           <div class="d-flex flex-column flex-lg-row align-items-center">
-            <img src="../assets/images/main/week_3.png" alt="" class="section4Img me-0 me-lg-20" />
+            <img
+              src="../assets/images/main/week_3.png"
+              alt="dateLineWeek3"
+              class="section4Img me-0 me-lg-20"
+            />
             <div class="d-flex d-lg-block flex-column align-items-center">
               <h2 class="text-highlight">WEEK 3</h2>
               <h3 class="text-primary mb-6">Scrum 新手村</h3>
@@ -236,7 +282,8 @@
                 </p>
               </div>
               <a
-                href=""
+                href="https://2022.thef2e.com/news/week3"
+                target="_blank"
                 class="text-white bg-secondary--dark px-6 py-2 rounded-5 fw-normal fw-normal"
                 >查看關卡細節</a
               >
@@ -246,7 +293,12 @@
       </ul>
     </div>
   </section>
-  <section class="pt-lg-30" ref="section5Box" data-sectionNum="5" style="overflow: hidden">
+  <section
+    class="pt-lg-30"
+    ref="section5Box"
+    data-sectionNum="5"
+    style="overflow: hidden; z-index: -12"
+  >
     <sectionTitleComponent
       :title="'重要時程'"
       :section-Num="5"
@@ -258,6 +310,7 @@
       >
         <li class="bg-secondary z-6 pb-10" ref="dateInfo1" data-sectionNum="5">
           <JoinButtonComponent
+            :link="'https://2022.thef2e.com/signup'"
             class="mb-7"
             :finger="true"
             :mobileHidden="false"
@@ -270,7 +323,7 @@
           <img
             src="../assets/images/main/date_start.png"
             class="mb-7 mx-auto d-block"
-            alt=""
+            alt="date_start"
             style="width: 140px; height: 108px"
           />
           <h2 class="text-highlight mb-6 text-center">START</h2>
@@ -282,7 +335,7 @@
           <img
             src="../assets/images/main/date_upload.png"
             class="mb-7 mx-auto d-block"
-            alt=""
+            alt="date_upload"
             style="width: 140px; height: 108px"
           />
           <h2 class="text-highlight mb-6 text-center">UPLOAD</h2>
@@ -296,7 +349,7 @@
           <img
             class="position-absolute"
             src="../assets/images/main/date_weekLine.png"
-            alt=""
+            alt="date_weekLine"
             style="max-width: 32px; max-height: 140px; top: -80px; left: 15%"
             ref="weekLine1"
             data-sectionNum="5"
@@ -304,7 +357,7 @@
           <img
             class="position-absolute"
             src="../assets/images/main/date_weekLine.png"
-            alt=""
+            alt="date_weekLine"
             style="max-width: 32px; max-height: 140px; top: -120px"
             ref="weekLine2"
             data-sectionNum="5"
@@ -312,7 +365,7 @@
           <img
             class="position-absolute"
             src="../assets/images/main/date_weekLine.png"
-            alt=""
+            alt="date_weekLine"
             style="max-width: 32px; max-height: 140px; top: -80px; right: 15%"
             ref="weekLine3"
             data-sectionNum="5"
@@ -324,7 +377,7 @@
             ref="dateLineShadow"
             data-sectionNum="5"
           ></div>
-          <img src="../assets/images/main/date_line.png" alt="" />
+          <img src="../assets/images/main/date_line.png" alt="date_line" />
         </div>
       </div>
     </div>
@@ -334,7 +387,7 @@
       <div class="pt-30 position-relative">
         <img
           src="../assets/images/bg/bg_decorate_03.png"
-          alt=""
+          alt="Cloud"
           class="position-absolute d-none d-lg-block"
           style="width: 368px; height: 178px; left: -50%; top: 140%"
           ref="leftCloud"
@@ -346,7 +399,7 @@
         </h2>
         <img
           src="../assets/images/bg/bg_decorate_07.png"
-          alt=""
+          alt="Cloud"
           class="position-absolute d-none d-lg-block"
           style="width: 450px; height: 333px; right: -50%"
           ref="rightCloud"
@@ -355,16 +408,27 @@
       </div>
     </div>
   </section>
-  <section ref="section7Box" data-sectionNum="7" style="overflow: hidden" class="pt-5">
-    <sectionTitleComponent
-      :title="'還有比賽等著你！'"
-      :section-Num="7"
-    ></sectionTitleComponent>
+  <section ref="section7Box" data-sectionNum="7" style="overflow: hidden" class="pt-5 pb-20">
+    <sectionTitleComponent :title="'還有比賽等著你！'" :section-Num="7"></sectionTitleComponent>
     <div class="container">
-      <div class="d-flex flex-column flex-lg-row align-items-center" ref="infoBox" data-sectionNum="7">
-        <div class="me-lg-30 position-relative mb-12 mb-lg-0" style="max-width: 375px; height: 375px">
-          <img src="../assets/images/main/award.png" alt="" />
-          <img src="" alt="" class="position-absolute" />
+      <div
+        class="d-flex flex-column flex-lg-row align-items-center"
+        ref="infoBox"
+        data-sectionNum="7"
+      >
+        <div
+          class="me-lg-30 position-relative mb-12 mb-lg-0"
+          style="max-width: 375px; height: 375px"
+        >
+          <img src="../assets/images/main/award.png" alt="award" />
+          <img
+            src="../assets/images/main/award_light.png"
+            alt="award_light"
+            class="position-absolute"
+            style="left: 0; z-index: -6"
+            ref="light"
+            data-sectionNum="7"
+          />
         </div>
         <ul>
           <li class="mb-12">
@@ -394,15 +458,115 @@
       </div>
     </div>
   </section>
+  <section ref="section8Box" data-sectionNum="8" style="overflow: hidden" class="pt-5">
+    <sectionTitleComponent :title="'贊助單位'" :section-Num="8"></sectionTitleComponent>
+    <div class="container">
+      <ul
+        class="d-flex flex-column flex-lg-row justify-content-between align-items-center mx-auto"
+        style="max-width: 1157px"
+        ref="sponsorList"
+        data-sectionNum="8"
+      >
+        <li class="mb-20" ref="sponsor1" data-sectionNum="8">
+          <SponsorButtonComponent
+            :sponsor="'#版塊設計'"
+            :sponsorLinkUrl="'https://blockstudio.tw/'"
+            :sponsorImgUrl="'src/assets/images/main/logo_blockstudio.png'"
+          ></SponsorButtonComponent>
+        </li>
+        <li class="mb-20" ref="sponsor2" data-sectionNum="8">
+          <SponsorButtonComponent
+            :sponsor="'#鈦坦科技'"
+            :sponsorLinkUrl="'https://titansoft.com/tw'"
+            :sponsorImgUrl="'src/assets/images/main/logo_titansoft.png'"
+          ></SponsorButtonComponent>
+        </li>
+        <li class="mb-20" ref="sponsor3" data-sectionNum="8">
+          <SponsorButtonComponent
+            :sponsor="'#凱鈿科技'"
+            :sponsorLinkUrl="'https://www.kdanmobile.com/zh-tw'"
+            :sponsorImgUrl="'src/assets/images/main/logo_kdanmobile.png'"
+          ></SponsorButtonComponent>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section ref="section9Box" data-sectionNum="9" style="overflow: hidden" class="d-none d-lg-block">
+    <div class="position-relative z-18">
+      <div class="container" data-sectionNum="9">
+        <div class="position-relative">
+          <img
+            src="../assets/images/bg/bg_decorate_01.png"
+            alt="cloud"
+            class="position-absolute cloud__left__end d-none d-lg-block"
+            ref="cloudLeftEnd"
+            data-sectionNum="9"
+          />
+          <div>
+            <img
+              src="../assets/images/main/finish.png"
+              alt="finishLine"
+              ref="finish"
+              data-sectionNum="9"
+              style="opacity: 0; transform: scale(2)"
+            />
+          </div>
+          <img
+            src="../assets/images/bg/bg_decorate_05.png"
+            alt="cloud"
+            class="position-absolute cloud__right__end d-none d-lg-block"
+            ref="cloudRightEnd"
+            data-sectionNum="9"
+          />
+        </div>
+      </div>
+      <div class="position-absolute finishLineBox d-flex z-18">
+        <div>
+          <img
+            src="../assets/images/main/finishLine_l.png"
+            ref="finishLineLeft"
+            data-sectionNum="9"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/images/main/finishLine_r.png"
+            ref="finishLineRight"
+            data-sectionNum="9"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section ref="section10Box" data-sectionNum="10" class="vh-100">
+    <div class="container h-100">
+      <div class="d-flex h-100 align-items-center justify-content-center">
+        <div ref="endBlock" data-sectionNum="10">
+          <img src="../assets/images/logo/logo.png" alt="logo" class="endLogo mb-5" />
+          <JoinButtonComponent
+            :finger="true"
+            :size1="true"
+            :textH2="'立即報名'"
+            :mobileHidden="false"
+            :link="'https://2022.thef2e.com/signup'"
+          ></JoinButtonComponent>
+        </div>
+      </div>
+    </div>
+  </section>
   <CharacterComponent />
   <TrafficLightComponent />
-  <JoinButtonComponent
-    :textP="'JOIN'"
-    :finger="true"
-    :mobileHidden="true"
-    class="position-fixed"
-    style="bottom: 20px; right: 20px"
-  ></JoinButtonComponent>
+  <div ref="buttonEndHidden" data-sectionNum="10">
+    <JoinButtonComponent
+      :link="'https://2022.thef2e.com/signup'"
+      :textP="'JOIN'"
+      :size2="true"
+      :finger="true"
+      :mobileHidden="false"
+      class="position-fixed z-6"
+      style="bottom: 20px; right: 20px"
+    ></JoinButtonComponent>
+  </div>
   <MapComponent />
 </template>
 
@@ -414,6 +578,7 @@ import UsersSvgComponent from '@/components/UsersSvgComponent.vue'
 import CharacterComponent from '@/components/CharacterComponent.vue'
 import TrafficLightComponent from '@/components/TrafficLightComponent.vue'
 import sectionTitleComponent from '@/components/SectionTitleComponent.vue'
+import SponsorButtonComponent from '../components/SponsorButtonComponent.vue'
 
 import GSAPanimationStore from '@/stores/GSAPanimationStore.js'
 import { mapActions } from 'pinia'
@@ -426,12 +591,12 @@ export default {
     CharacterComponent,
     UsersSvgComponent,
     TrafficLightComponent,
-    sectionTitleComponent
+    sectionTitleComponent,
+    SponsorButtonComponent
   },
   data() {
     return {
-      windowWidth: 0,
-      hasReloaded: false
+      windowWidth: 0
     }
   },
   methods: {
@@ -475,6 +640,15 @@ export default {
     left: -5%;
     top: 45%;
   }
+
+  &__end {
+    @media (min-width: 992px) {
+      width: 430px;
+      height: 280px;
+      left: -55%;
+      top: 55%;
+    }
+  }
 }
 
 .cloud__right {
@@ -488,6 +662,15 @@ export default {
     right: -10%;
     top: 45%;
   }
+
+  &__end {
+    @media (min-width: 992px) {
+      width: 485px;
+      height: 255px;
+      right: -55%;
+      top: 55%;
+    }
+  }
 }
 
 .section4Img {
@@ -497,6 +680,20 @@ export default {
   @media (min-width: 992px) {
     width: 280px;
     height: 190px;
+  }
+}
+
+.finishLineBox {
+  top: 66%;
+}
+
+.endLogo {
+  width: 226px;
+  height: 169px;
+
+  @media (min-width: 992px) {
+    width: 520px;
+    height: 387.15px;
   }
 }
 </style>

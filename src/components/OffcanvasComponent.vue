@@ -26,7 +26,7 @@
                 }
               "
             >
-              <img src="../assets/images/ic/ic_menu_info.png" alt="" class="icon" />
+              <img src="../assets/images/ic/ic_menu_info.png" alt="info" class="icon" />
               <p class="text-secondary">關卡資訊</p>
             </a>
           </li>
@@ -46,7 +46,7 @@
                 }
               "
             >
-              <img src="../assets/images/ic/ic_menu_list.png" alt="" class="icon" />
+              <img src="../assets/images/ic/ic_menu_list.png" alt="workList" class="icon" />
               <p class="text-secondary">作品列表</p>
             </a>
           </li>
@@ -66,7 +66,7 @@
                 }
               "
             >
-              <img src="../assets/images/ic/ic_menu_strategy.png" alt="" class="icon" />
+              <img src="../assets/images/ic/ic_menu_strategy.png" alt="resource" class="icon" />
               <p class="text-secondary">攻略資源</p>
             </a>
           </li>
@@ -86,7 +86,7 @@
                 }
               "
             >
-              <img src="../assets/images/ic/ic_menu_job.png" alt="" class="icon" />
+              <img src="../assets/images/ic/ic_menu_job.png" alt="job" class="icon" />
               <p class="text-secondary">求職專區</p>
             </a>
           </li>

@@ -1,10 +1,10 @@
 <template>
-  <div class="position-fixed d-none d-xl-block" style="left: 30px; bottom: 20px">
-    <div class="position-relative">
-      <img src="../assets/images/main/map.svg" alt="" class="map" />
+  <div class="position-fixed d-none d-xl-block z-18" style="left: 30px; bottom: 20px" ref="mapBox" data-sectionNum="10">
+    <div class="position-relative z-6">
+      <img :src="mapUrl" alt="" class="map" />
       <img
         src="../assets/images/main/map_now.gif"
-        alt=""
+        alt="mapTag"
         class="tag position-absolute"
         ref="mapTag"
         data-sectionNum="2"
@@ -15,11 +15,15 @@
 
 <script>
 import GSAPanimationStore from '../stores/GSAPanimationStore.js'
-import { mapActions } from 'pinia'
+import homeStore from '../stores/homeStore'
+import { mapActions, mapState } from 'pinia'
 
 export default {
   methods: {
     ...mapActions(GSAPanimationStore, ['getElement'])
+  },
+  computed: {
+    ...mapState(homeStore, ['mapUrl'])
   },
   mounted() {
     this.getElement(this.$refs)

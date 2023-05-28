@@ -1,6 +1,7 @@
 <template>
   <a
-    href="#"
+    :href="link"
+    target="_blank"
     class="d-flex flex-column align-items-center"
     :class="hidden"
     @mouseenter="
@@ -16,7 +17,7 @@
       }
     "
   >
-    <p class="fs-12 mb-2 text-primary">{{ textP }}</p>
+    <p class="fs-7 fs-lg-12 mb-2 text-primary">{{ textP }}</p>
     <img
       src="../assets/images/btn/btn_joinHand.gif"
       alt="finger"
@@ -34,8 +35,8 @@ import { mapActions } from 'pinia'
 import homeStore from '../stores/homeStore.js'
 
 export default {
-  // 允許按鈕接收設定各種文字、是否顯示手指、是否設定特殊尺寸、是否在手機版隱藏
-  props: ['textP', 'textH2', 'textH4', 'finger', 'size1', 'mobileHidden'],
+  // 允許按鈕接收設定各種文字、是否顯示手指、是否設定特殊尺寸、是否在手機版隱藏、連結
+  props: ['textP', 'textH2', 'textH4', 'finger', 'size1', 'size2', 'mobileHidden', 'link'],
   methods: {
     // switchImage 可用來切換圖片造成動畫效果
     ...mapActions(homeStore, ['switchImage']),
@@ -59,6 +60,7 @@ export default {
   mounted() {
     // 設定特殊尺寸
     this.size1 === true ? this.$el.classList.add('size1') : ''
+    this.size2 === true ? this.$el.classList.add('size2') : ''
   }
 }
 </script>
@@ -90,6 +92,26 @@ export default {
     @media (min-width: 992px) {
       width: 160px;
       height: 93.2px;
+    }
+  }
+}
+.size2 {
+  bottom: 5px !important;
+
+  & .join__finger {
+    width: 20px;
+    height: 31px;
+    @media (min-width: 992px) {
+      width: 57px;
+      height: 71px;
+    }
+  }
+  & .join__btn {
+    width: 55px;
+    height: 30px;
+    @media (min-width: 992px) {
+      width: 103px;
+      height: 60px;
     }
   }
 }
