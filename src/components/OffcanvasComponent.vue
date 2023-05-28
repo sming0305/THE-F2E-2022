@@ -52,7 +52,7 @@
           </li>
           <li>
             <a
-              href="https://hackmd.io/ofJD4K7iSI65V19"
+              href="https://hackmd.io/@hexschool/rJ17ulEQj"
               class="mb-20 d-flex flex-column align-items-center"
               target="_blank"
               @mouseenter="

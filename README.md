@@ -1,35 +1,51 @@
-# 2022-the-f2e
+# 2022 4th The F2E 活動作品
+<img alt="Let-s-Entertaining" src="https://i.imgur.com/iGafHEK.jpg">
 
-This template should help get you started developing with Vue 3 in Vite.
+參訪網址請點 : [The F2E 活動網站設計]()
 
-## Recommended IDE Setup
+### 作品說明:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+### 本地運行:
+需求:
+- 檢視網頁用的 Chrome 瀏覽器
+- 終端機 / 文字編輯器
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+使用終端機並確保您在 2022_The_F2E 此資料夾路徑下  
+在終端機內輸入:
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
+npm install  
 npm run dev
 ```
+待終端機出現 VITE v4.3.6  ready in xxx ms 字樣後  
+將顯示的 Local 的路徑貼至 Chrome 瀏覽器即可。
 
-### Compile and Minify for Production
+### 資料夾說明:
+`src` 主要資料存放處，請由此進入。
 
-```sh
-npm run build
-```
+-`assets` 分類存放 font、SCSS、images 資料夾。
+-- `font` 字體。
+-- `helper` 工具、base、變數、mixin..等 SCSS
+-- `images` 圖片
 
-### Lint with [ESLint](https://eslint.org/)
+-`components` 元件資料夾
 
-```sh
-npm run lint
-```
+-`router` 路由資料夾
+
+-`stores` Pinia Store 資料夾
+--`GSAPanimationStore.js` ( GSAP 動畫集中撰寫於此 )
+
+-`views` 頁面資料夾
+
+### 使用技術
+- Vue & Vite
+- Vue Pinia
+- GSAP
+- Bootstrap 5
+- SCSS
+
+
+
+
+
+
