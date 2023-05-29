@@ -30,7 +30,7 @@ npm run dev
 將顯示的 Local 的路徑貼至瀏覽器即可。
 
 ### 資料夾說明:
-`src` 主要資料存放處，請由此進入。
+`src` 主要資料存放處，請由此進入。  
 `public` 圖片存放處
 
 -`assets` 分類存放 font、SCSS 資料夾。  
