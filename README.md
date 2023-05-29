@@ -31,11 +31,11 @@ npm run dev
 
 ### 資料夾說明:
 `src` 主要資料存放處，請由此進入。
+`public` 圖片存放處
 
--`assets` 分類存放 font、SCSS、images 資料夾。  
+-`assets` 分類存放 font、SCSS 資料夾。  
 -- `font` 字體。  
 -- `helper` 工具、base、變數、mixin..等 SCSS  
--- `images` 圖片
 
 -`components` 元件資料夾
 
