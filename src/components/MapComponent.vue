@@ -1,7 +1,12 @@
 <template>
-  <div class="position-fixed d-none d-xl-block z-18" style="left: 30px; bottom: 20px" ref="mapBox" data-sectionNum="10">
+  <div
+    class="position-fixed d-none d-xl-block z-18"
+    style="left: 30px; bottom: 20px"
+    ref="mapBox"
+    data-sectionNum="10"
+  >
     <div class="position-relative z-6">
-      <img :src="mapUrl" alt="" class="map" />
+      <img src="/images/main/map.svg" alt="" class="map" ref="map" data-sectionNum="10" />
       <img
         src="/images/main/map_now.gif"
         alt="mapTag"
@@ -23,7 +28,14 @@ export default {
     ...mapActions(GSAPanimationStore, ['getElement'])
   },
   computed: {
-    ...mapState(homeStore, ['mapUrl'])
+    ...mapState(homeStore, ['mapFinishState'])
+  },
+  watch: {
+    mapFinishState() {
+      this.mapFinishState === true
+        ? (this.$refs.map.src = this.$refs.map.src.replace('map.svg', 'map_finish.svg'))
+        : (this.$refs.map.src = this.$refs.map.src.replace('map_finish.svg', 'map.svg'))
+    }
   },
   mounted() {
     this.getElement(this.$refs)

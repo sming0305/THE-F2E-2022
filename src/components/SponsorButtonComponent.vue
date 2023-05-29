@@ -14,7 +14,7 @@
       }
     "
   >
-    <img :src="sponsorImgUrl" alt="sponsor" class="sponsorImg me-4" />
+    <img :src="sponsorUrl" alt="sponsor" class="sponsorImg me-4" />
     <img
       src="/images/btn/btn_sponsor.png"
       alt="sponsorButton"
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+/* global process */
 import homeStore from '@/stores/homeStore.js'
 import { mapActions } from 'pinia'
 
@@ -37,6 +38,12 @@ export default {
   props: ['sponsorImgUrl', 'sponsorLinkUrl', 'sponsor'],
   methods: {
     ...mapActions(homeStore, ['switchImage'])
+  },
+  computed:{
+    sponsorUrl(){
+      const basePath = process.env.NODE_ENV === 'production' ? '/THE-F2E-2022/' : './';
+      return `${basePath}${this.sponsorImgUrl}`;
+    }
   }
 }
 </script>

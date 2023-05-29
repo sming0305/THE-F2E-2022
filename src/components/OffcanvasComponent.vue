@@ -17,12 +17,12 @@
               target="_blank"
               @mouseenter="
                 (e) => {
-                  image('entry', 0, e)
+                  switchImage('entry', 0, e)
                 }
               "
               @mouseleave="
                 (e) => {
-                  image('leave', 0, e)
+                  switchImage('leave', 0, e)
                 }
               "
             >
@@ -37,12 +37,12 @@
               target="_blank"
               @mouseenter="
                 (e) => {
-                  image('entry', 1, e)
+                  switchImage('entry', 0, e)
                 }
               "
               @mouseleave="
                 (e) => {
-                  image('leave', 1, e)
+                  switchImage('leave', 0, e)
                 }
               "
             >
@@ -57,12 +57,12 @@
               target="_blank"
               @mouseenter="
                 (e) => {
-                  image('entry', 2, e)
+                  switchImage('entry', 0, e)
                 }
               "
               @mouseleave="
                 (e) => {
-                  image('leave', 2, e)
+                  switchImage('leave', 0, e)
                 }
               "
             >
@@ -77,12 +77,12 @@
               target="_blank"
               @mouseenter="
                 (e) => {
-                  image('entry', 3, e)
+                  switchImage('entry', 0, e)
                 }
               "
               @mouseleave="
                 (e) => {
-                  image('leave', 3, e)
+                  switchImage('leave', 0, e)
                 }
               "
             >
@@ -98,79 +98,56 @@
         class="position-absolute vh-100 top-0 end-z-20"
         style="width: 20px"
       />
-      <img
-        src="/images/btn/btn_burger_open.png"
-        alt="btn"
-        class="controlBtn position-absolute"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasScrolling"
-        aria-controls="offcanvasScrolling"
+      <div
         @mouseenter="
           (e) => {
-            image('offcanvasEntry', 4, e)
+            switchImage('entry', 0, e)
           }
         "
         @mouseleave="
           (e) => {
-            image('offcanvasLeave', 4, e)
+            switchImage('leave', 0, e)
           }
         "
-        @click="
-          (e) => {
-            image('toggle', 4, e)
-          }
-        "
-      />
+      >
+        <img
+          src="/images/btn/btn_burger_open.png"
+          alt="btn"
+          class="controlBtn position-absolute"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+          @click="
+            (e) => {
+              changeImage(e)
+            }
+          "
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import homeStore from '../stores/homeStore'
+import { mapActions } from 'pinia'
+
 export default {
   data() {
     return {
-      offcanvasState: false,
-      images: [
-        '/images/ic/ic_menu_info.png',
-        '/images/ic/ic_menu_list.png',
-        '/images/ic/ic_menu_strategy.png',
-        '/images/ic/ic_menu_job.png',
-        '/images/btn/btn_burger_open.png',
-        '/images/btn/btn_burger_close.png'
-      ]
+      offcanvasState: false
     }
   },
   methods: {
-    image(entry, number, e) {
+    ...mapActions(homeStore, ['switchImage']),
+    changeImage(e) {
       const target = e.target
-      let imageUrl = this.images[number]
-
-      // 按照點擊的目標以及狀態，判斷offcanvas的連結和開關按鈕要使用哪張圖片
-      switch (entry) {
-        case 'entry':
-          target.children[0].src = imageUrl.replace('.png', '_h.png')
-          break
-        case 'leave':
-          target.children[0].src = imageUrl
-          break
-        case 'toggle':
-          this.offcanvasState = !this.offcanvasState
-          this.offcanvasState === true
-            ? (target.src = this.images[number + 1])
-            : (target.src = this.images[number])
-          break
-        case 'offcanvasEntry':
-          this.offcanvasState === true
-            ? (target.src = this.images[number + 1].replace('.png', '_h.png'))
-            : (target.src = imageUrl.replace('.png', '_h.png'))
-          break
-        case 'offcanvasLeave':
-          this.offcanvasState === true
-            ? (target.src = this.images[number + 1])
-            : (target.src = imageUrl)
-          break
-      }
+      // 判斷offcanvas的連結開關按鈕換圖片
+      this.offcanvasState = !this.offcanvasState
+      this.offcanvasState === true
+        ? (target.src = target.src.replace('open_h.png', 'close.png'))
+        : (target.src = target.src.replace('close_h.png', 'open.png'))
     }
   }
 }
