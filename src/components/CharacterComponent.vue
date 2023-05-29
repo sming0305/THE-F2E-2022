@@ -8,7 +8,7 @@
         data-sectionNum="2"
       >
         <img
-          src="../assets/images/bg/bg_decorate_04.png"
+          src="/images/bg/bg_decorate_08.png"
           alt="treeBackground"
           class="position-absolute tree tree__left z--6"
           ref="treeLeft"
@@ -16,7 +16,7 @@
           style="visibility: hidden"
         />
         <img
-          src="../assets/images/bg/bg_decorate_09.png"
+          src="/images/bg/bg_decorate_09.png"
           alt="graceBackground"
           class="position-absolute grace grace__left z--6"
           style="visibility: hidden"
@@ -26,7 +26,7 @@
         <div class="d-flex justify-content-center align-items-end character">
           <div class="character--size1 z-12">
             <img
-              src="../assets/images/character/character_f2e.gif"
+              src="/images/character/character_f2e.gif"
               alt="characterF2e"
               ref="characterLeft"
               data-sectionNum="2"
@@ -34,7 +34,7 @@
           </div>
           <div class="character--size2 z-12">
             <img
-              src="../assets/images/character/character_ui.gif"
+              src="/images/character/character_ui.gif"
               alt="characterUi"
               ref="characterCenter"
               data-sectionNum="2"
@@ -42,7 +42,7 @@
           </div>
           <div class="character--size3 z-12">
             <img
-              src="../assets/images/character/character_team.gif"
+              src="/images/character/character_team.gif"
               alt="characterTeam"
               ref="characterRight"
               data-sectionNum="2"
@@ -50,7 +50,7 @@
           </div>
         </div>
         <img
-          src="../assets/images/bg/bg_decorate_09.png"
+          src="/images/bg/bg_decorate_09.png"
           alt="graceBackground"
           class="position-absolute grace grace__right z--6"
           style="visibility: hidden"
@@ -58,14 +58,14 @@
           data-sectionNum="2"
         />
         <img
-          src="../assets/images/bg/bg_decorate_08.png"
+          src="/images/bg/bg_decorate_08.png"
           alt="treeBackground"
           class="position-absolute tree tree__right z--6"
           ref="treeRight"
           data-sectionNum="8"
           style="visibility: hidden"
         />
-          <img src="../assets/images/main/road.png" class="z-6 road" alt="road" />
+          <img src="/images/main/road.png" class="z-6 road" alt="road" />
       </div>
     </div>
   </div>

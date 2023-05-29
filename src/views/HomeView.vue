@@ -8,27 +8,27 @@
         data-sectionNum="1"
       >
         <img
-          src="../assets/images/main/start.png"
+          src="/images/main/start.png"
           alt="startLine"
           class="z--6"
           style="object-fit: contain"
         />
       </div>
       <div class="position-absolute cloud__left z--12" ref="cloudLeft" data-sectionNum="1">
-        <img src="../assets/images/bg/bg_decorate_01.png" alt="cloud" />
+        <img src="/images/bg/bg_decorate_01.png" alt="cloud" />
       </div>
       <div class="position-absolute cloud__right z--12" ref="cloudRight" data-sectionNum="1">
-        <img src="../assets/images/bg/bg_decorate_05.png" alt="cloud" />
+        <img src="/images/bg/bg_decorate_05.png" alt="cloud" />
       </div>
       <div class="d-flex justify-content-center" ref="sectionTextArea" data-sectionNum="1">
         <div class="d-flex flex-column pt-5" style="max-width: 1175px">
           <div class="ps-6">
             <div class="mt-7 d-lg-none d-block mb-8 mx-auto" style="width: 253px; height: 189px">
-              <img src="../assets/images/logo/logo.png" alt="TheF2eLogo" />
+              <img src="/images/logo/logo.png" alt="TheF2eLogo" />
             </div>
           </div>
           <div class="mt-7 d-none d-lg-block mx-auto" style="width: 680px; height: 236.03px">
-            <img src="../assets/images/logo/logo_text.png" alt="TheF2eLogo-text" />
+            <img src="/images/logo/logo_text.png" alt="TheF2eLogo-text" />
           </div>
           <h1
             class="bg-highlight px-8 py-2 px-lg-20 py-lg-4 text-white text-center mb-10 mb-lg-24 mx-auto rounded-5"
@@ -70,7 +70,7 @@
             </li>
           </ul>
           <div class="flex-grow-1" style="max-width: 1175px; visibility: hidden">
-            <img src="../assets/images/main/road.png" class="z-6" alt="road" />
+            <img src="/images/main/road.png" class="z-6" alt="road" />
           </div>
         </div>
       </div>
@@ -86,12 +86,12 @@
           <li class="me-10" ref="question1" data-sectionNum="2">
             <H4 class="mb-2">羨慕別人的酷酷網頁動畫？</H4>
             <img
-              src="../assets/images/main/question_1.png"
+              src="/images/main/question_1.png"
               alt="question1"
               class="d-none d-lg-block"
             />
             <img
-              src="../assets/images/main/question_1_m.png"
+              src="/images/main/question_1_m.png"
               alt="question1"
               class="d-block d-lg-none"
               style="max-width: 335px; height: 262px"
@@ -101,12 +101,12 @@
             <H4 class="mb-2">滿足不了同事的許願？</H4>
             <img
               class="d-none d-lg-block"
-              src="../assets/images/main/question_2.png"
+              src="/images/main/question_2.png"
               alt="question2"
             />
             <img
               class="d-block d-lg-none"
-              src="../assets/images/main/question_2.png"
+              src="/images/main/question_2.png"
               alt="question2"
               style="max-width: 335px; height: 262px"
             />
@@ -114,12 +114,12 @@
           <li ref="question3" data-sectionNum="2">
             <H4 class="mb-2">動畫技能樹太雜無從下手？</H4>
             <img
-              src="../assets/images/main/question_3.png"
+              src="/images/main/question_3.png"
               alt="question3"
               class="d-none d-lg-block"
             />
             <img
-              src="../assets/images/main/question_3_m.png"
+              src="/images/main/question_3_m.png"
               alt="question3"
               class="d-block d-lg-none"
               style="max-width: 335px; height: 262px"
@@ -150,7 +150,7 @@
             :textH4="'前端工程師'"
           ></JoinButtonComponent>
           <div class="d-block d-lg-none" style="max-width: 157px; max-height: 270px">
-            <img src="../assets/images/character/character_f2e.png" alt="character_f2e" />
+            <img src="/images/character/character_f2e.png" alt="character_f2e" />
           </div>
         </li>
         <li
@@ -159,7 +159,7 @@
           data-sectionNum="3"
         >
           <div class="d-block d-lg-none" style="max-width: 157px; max-height: 255px">
-            <img src="../assets/images/character/character_ui.png" alt="character_ui" />
+            <img src="/images/character/character_ui.png" alt="character_ui" />
           </div>
           <JoinButtonComponent
             :link="'https://2022.thef2e.com/signup'"
@@ -178,7 +178,7 @@
             :textH4="'團體組(UI+前端)'"
           ></JoinButtonComponent>
           <div class="d-block d-lg-none" style="max-width: 158px; max-height: 238px">
-            <img src="../assets/images/character/character_team.png" alt="character_team" />
+            <img src="/images/character/character_team.png" alt="character_team" />
           </div>
         </li>
       </ul>
@@ -196,7 +196,7 @@
         <li class="d-block d-lg-flex mb-20 mb-lg-0" ref="week1Item" data-sectionNum="4">
           <div class="d-flex flex-column flex-lg-row align-items-center">
             <img
-              src="../assets/images/main/week_1.png"
+              src="/images/main/week_1.png"
               alt="dateLineWeek1"
               class="section4Img me-0 me-lg-20"
             />
@@ -230,7 +230,7 @@
           data-sectionNum="4"
         >
           <div class="d-flex flex-column flex-lg-row-reverse align-items-center">
-            <img src="../assets/images/main/week_2.png" alt="dateLineWeek2" class="section4Img" />
+            <img src="/images/main/week_2.png" alt="dateLineWeek2" class="section4Img" />
             <div>
               <h2 class="text-highlight text-center text-lg-end">WEEK 2</h2>
               <h3 class="text-primary mb-6">今晚，我想來點點簽</h3>
@@ -262,7 +262,7 @@
         <li class="d-block d-lg-flex" ref="week3Item" data-sectionNum="4">
           <div class="d-flex flex-column flex-lg-row align-items-center">
             <img
-              src="../assets/images/main/week_3.png"
+              src="/images/main/week_3.png"
               alt="dateLineWeek3"
               class="section4Img me-0 me-lg-20"
             />
@@ -321,7 +321,7 @@
         </li>
         <li class="pt-20 bg-secondary z-6" ref="dateInfo2" data-sectionNum="5">
           <img
-            src="../assets/images/main/date_start.png"
+            src="/images/main/date_start.png"
             class="mb-7 mx-auto d-block"
             alt="date_start"
             style="width: 140px; height: 108px"
@@ -333,7 +333,7 @@
         </li>
         <li class="pt-20 bg-secondary z-6" ref="dateInfo3" data-sectionNum="5">
           <img
-            src="../assets/images/main/date_upload.png"
+            src="/images/main/date_upload.png"
             class="mb-7 mx-auto d-block"
             alt="date_upload"
             style="width: 140px; height: 108px"
@@ -348,7 +348,7 @@
         <div class="d-flex justify-content-around position-relative" style="height: 1px">
           <img
             class="position-absolute"
-            src="../assets/images/main/date_weekLine.png"
+            src="/images/main/date_weekLine.png"
             alt="date_weekLine"
             style="max-width: 32px; max-height: 140px; top: -80px; left: 15%"
             ref="weekLine1"
@@ -356,7 +356,7 @@
           />
           <img
             class="position-absolute"
-            src="../assets/images/main/date_weekLine.png"
+            src="/images/main/date_weekLine.png"
             alt="date_weekLine"
             style="max-width: 32px; max-height: 140px; top: -120px"
             ref="weekLine2"
@@ -364,7 +364,7 @@
           />
           <img
             class="position-absolute"
-            src="../assets/images/main/date_weekLine.png"
+            src="/images/main/date_weekLine.png"
             alt="date_weekLine"
             style="max-width: 32px; max-height: 140px; top: -80px; right: 15%"
             ref="weekLine3"
@@ -377,7 +377,7 @@
             ref="dateLineShadow"
             data-sectionNum="5"
           ></div>
-          <img src="../assets/images/main/date_line.png" alt="date_line" />
+          <img src="/images/main/date_line.png" alt="date_line" />
         </div>
       </div>
     </div>
@@ -386,7 +386,7 @@
     <div class="container pt-30">
       <div class="pt-30 position-relative">
         <img
-          src="../assets/images/bg/bg_decorate_03.png"
+          src="/images/bg/bg_decorate_03.png"
           alt="Cloud"
           class="position-absolute d-none d-lg-block"
           style="width: 368px; height: 178px; left: -50%; top: 140%"
@@ -398,7 +398,7 @@
           區區修煉已經無法滿足了嗎？
         </h2>
         <img
-          src="../assets/images/bg/bg_decorate_07.png"
+          src="/images/bg/bg_decorate_07.png"
           alt="Cloud"
           class="position-absolute d-none d-lg-block"
           style="width: 450px; height: 333px; right: -50%"
@@ -420,9 +420,9 @@
           class="me-lg-30 position-relative mb-12 mb-lg-0"
           style="max-width: 375px; height: 375px"
         >
-          <img src="../assets/images/main/award.png" alt="award" />
+          <img src="/images/main/award.png" alt="award" />
           <img
-            src="../assets/images/main/award_light.png"
+            src="/images/main/award_light.png"
             alt="award_light"
             class="position-absolute"
             style="left: 0; z-index: -6"
@@ -471,21 +471,21 @@
           <SponsorButtonComponent
             :sponsor="'#版塊設計'"
             :sponsorLinkUrl="'https://blockstudio.tw/'"
-            :sponsorImgUrl="'src/assets/images/main/logo_blockstudio.png'"
+            :sponsorImgUrl="'/images/main/logo_blockstudio.png'"
           ></SponsorButtonComponent>
         </li>
         <li class="mb-20" ref="sponsor2" data-sectionNum="8">
           <SponsorButtonComponent
             :sponsor="'#鈦坦科技'"
             :sponsorLinkUrl="'https://titansoft.com/tw'"
-            :sponsorImgUrl="'src/assets/images/main/logo_titansoft.png'"
+            :sponsorImgUrl="'/images/main/logo_titansoft.png'"
           ></SponsorButtonComponent>
         </li>
         <li class="mb-20" ref="sponsor3" data-sectionNum="8">
           <SponsorButtonComponent
             :sponsor="'#凱鈿科技'"
             :sponsorLinkUrl="'https://www.kdanmobile.com/zh-tw'"
-            :sponsorImgUrl="'src/assets/images/main/logo_kdanmobile.png'"
+            :sponsorImgUrl="'/images/main/logo_kdanmobile.png'"
           ></SponsorButtonComponent>
         </li>
       </ul>
@@ -496,7 +496,7 @@
       <div class="container" data-sectionNum="9">
         <div class="position-relative">
           <img
-            src="../assets/images/bg/bg_decorate_01.png"
+            src="/images/bg/bg_decorate_01.png"
             alt="cloud"
             class="position-absolute cloud__left__end d-none d-lg-block"
             ref="cloudLeftEnd"
@@ -504,7 +504,7 @@
           />
           <div>
             <img
-              src="../assets/images/main/finish.png"
+              src="/images/main/finish.png"
               alt="finishLine"
               ref="finish"
               data-sectionNum="9"
@@ -512,7 +512,7 @@
             />
           </div>
           <img
-            src="../assets/images/bg/bg_decorate_05.png"
+            src="/images/bg/bg_decorate_05.png"
             alt="cloud"
             class="position-absolute cloud__right__end d-none d-lg-block"
             ref="cloudRightEnd"
@@ -523,14 +523,14 @@
       <div class="position-absolute finishLineBox d-flex z-18">
         <div>
           <img
-            src="../assets/images/main/finishLine_l.png"
+            src="/images/main/finishLine_l.png"
             ref="finishLineLeft"
             data-sectionNum="9"
           />
         </div>
         <div>
           <img
-            src="../assets/images/main/finishLine_r.png"
+            src="/images/main/finishLine_r.png"
             ref="finishLineRight"
             data-sectionNum="9"
           />
@@ -542,7 +542,7 @@
     <div class="container h-100">
       <div class="d-flex h-100 align-items-center justify-content-center">
         <div ref="endBlock" data-sectionNum="10">
-          <img src="../assets/images/logo/logo.png" alt="logo" class="endLogo mb-5" />
+          <img src="/images/logo/logo.png" alt="logo" class="endLogo mb-5" />
           <JoinButtonComponent
             :finger="true"
             :size1="true"

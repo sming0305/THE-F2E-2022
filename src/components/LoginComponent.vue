@@ -1,7 +1,7 @@
 <template>
   <nav class="nav d-flex justify-content-between align-items-start fixed-top">
     <img
-      src="../assets/images/logo/logo.png"
+      src="/images/logo/logo.png"
       alt="logo"
       class="ms-20 mt-15 nav__pc__logo"
       style="height: 148px; width: 200px; visibility: hidden;"
@@ -9,7 +9,7 @@
     />
     <div class="d-block d-lg-none me-5"></div>
     <img
-      src="../assets/images/logo/logo_text.png"
+      src="/images/logo/logo_text.png"
       alt="logo"
       class="d-block d-lg-none ms-30"
       style="height: 46px; width: 133px"
@@ -28,7 +28,7 @@
           this.switchImage('leave', 0, e)
         }
       "
-      ><img src="../assets/images/btn/btn_user.png" alt="login" class="login__btn"
+      ><img src="/images/btn/btn_user.png" alt="login" class="login__btn"
     /></a>
   </nav>
 </template>

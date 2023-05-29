@@ -3,7 +3,7 @@
     <div class="position-relative z-6">
       <img :src="mapUrl" alt="" class="map" />
       <img
-        src="../assets/images/main/map_now.gif"
+        src="/images/main/map_now.gif"
         alt="mapTag"
         class="tag position-absolute"
         ref="mapTag"

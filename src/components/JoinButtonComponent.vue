@@ -19,12 +19,12 @@
   >
     <p class="fs-7 fs-lg-12 mb-2 text-primary">{{ textP }}</p>
     <img
-      src="../assets/images/btn/btn_joinHand.gif"
+      src="/images/btn/btn_joinHand.gif"
       alt="finger"
       class="join__finger mb-2"
       :class="fingerShow"
     />
-    <img src="../assets/images/btn/btn_join.png" alt="button" class="join__btn" />
+    <img src="/images/btn/btn_join.png" alt="button" class="join__btn" />
     <h4 v-if="textH4" class="mt-8 fs-10 fs-sm-16 text-primary">{{ textH4 }}</h4>
     <h2 v-if="textH2" class="mt-10 fs-19 fs-sm-30 text-highlight">{{ textH2 }}</h2>
   </a>

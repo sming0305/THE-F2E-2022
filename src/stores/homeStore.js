@@ -7,6 +7,7 @@ export default defineStore('homeStore', {
   actions: {
     switchImage(entry, number, e) {
       const target = e.target
+      console.log(target.children[number].src)
       entry === 'entry'
         ? (target.children[number].src = target.children[number].src.replace('.png', '_h.png'))
         : (target.children[number].src = target.children[number].src.replace('_h.png', '.png'))
@@ -18,8 +19,8 @@ export default defineStore('homeStore', {
   getters: {
     mapUrl: ({ mapFinish }) => {
       return mapFinish === true
-        ? 'src/assets/images/main/map_finish.svg'
-        : 'src/assets/images/main/map.svg'
+        ? '/images/main/map_finish.svg'
+        : '/images/main/map.svg'
     }
   }
 })

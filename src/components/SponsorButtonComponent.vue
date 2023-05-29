@@ -16,7 +16,7 @@
   >
     <img :src="sponsorImgUrl" alt="sponsor" class="sponsorImg me-4" />
     <img
-      src="../assets/images/btn/btn_sponsor.png"
+      src="/images/btn/btn_sponsor.png"
       alt="sponsorButton"
       class="position-absolute sponsorButton z--6"
     />

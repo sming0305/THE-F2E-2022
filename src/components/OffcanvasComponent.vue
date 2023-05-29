@@ -26,7 +26,7 @@
                 }
               "
             >
-              <img src="../assets/images/ic/ic_menu_info.png" alt="info" class="icon" />
+              <img src="/images/ic/ic_menu_info.png" alt="info" class="icon" />
               <p class="text-secondary">關卡資訊</p>
             </a>
           </li>
@@ -46,7 +46,7 @@
                 }
               "
             >
-              <img src="../assets/images/ic/ic_menu_list.png" alt="workList" class="icon" />
+              <img src="/images/ic/ic_menu_list.png" alt="workList" class="icon" />
               <p class="text-secondary">作品列表</p>
             </a>
           </li>
@@ -66,7 +66,7 @@
                 }
               "
             >
-              <img src="../assets/images/ic/ic_menu_strategy.png" alt="resource" class="icon" />
+              <img src="/images/ic/ic_menu_strategy.png" alt="resource" class="icon" />
               <p class="text-secondary">攻略資源</p>
             </a>
           </li>
@@ -86,20 +86,20 @@
                 }
               "
             >
-              <img src="../assets/images/ic/ic_menu_job.png" alt="job" class="icon" />
+              <img src="/images/ic/ic_menu_job.png" alt="job" class="icon" />
               <p class="text-secondary">求職專區</p>
             </a>
           </li>
         </ul>
       </div>
       <img
-        src="../assets/images/bg/bg_menuSide.png"
+        src="/images/bg/bg_menuSide.png"
         alt="bg_menuSide"
         class="position-absolute vh-100 top-0 end-z-20"
         style="width: 20px"
       />
       <img
-        src="../assets/images/btn/btn_burger_open.png"
+        src="/images/btn/btn_burger_open.png"
         alt="btn"
         class="controlBtn position-absolute"
         type="button"
@@ -132,12 +132,12 @@ export default {
     return {
       offcanvasState: false,
       images: [
-        'src/assets/images/ic/ic_menu_info.png',
-        'src/assets/images/ic/ic_menu_list.png',
-        'src/assets/images/ic/ic_menu_strategy.png',
-        'src/assets/images/ic/ic_menu_job.png',
-        'src/assets/images/btn/btn_burger_open.png',
-        'src/assets/images/btn/btn_burger_close.png'
+        '/images/ic/ic_menu_info.png',
+        '/images/ic/ic_menu_list.png',
+        '/images/ic/ic_menu_strategy.png',
+        '/images/ic/ic_menu_job.png',
+        '/images/btn/btn_burger_open.png',
+        '/images/btn/btn_burger_close.png'
       ]
     }
   },

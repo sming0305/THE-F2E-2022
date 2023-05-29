@@ -20,23 +20,23 @@
       GO!!
     </p>
     <div class="position-relative">
-      <img src="../assets/images/main/ready_frame.png" alt="signFrame" class="z-6 position: inherit;" />
+      <img src="/images/main/ready_frame.png" alt="signFrame" class="z-6 position: inherit;" />
       <img
-        src="../assets/images/main/ready_1.png"
+        src="/images/main/ready_1.png"
         alt="greenLight"
         class="position-absolute traffic__Box__ready1"
         ref="trafficLightGreen"
         data-sectionNum="1"
       />
       <img
-        src="../assets/images/main/ready_2.png"
+        src="/images/main/ready_2.png"
         alt="yellowLight"
         class="position-absolute traffic__Box__ready2"
         ref="trafficLightYellow"
         data-sectionNum="1"
       />
       <img
-        src="../assets/images/main/ready_3.png"
+        src="/images/main/ready_3.png"
         alt="redLight"
         class="position-absolute traffic__Box__ready3"
         ref="trafficLightRed"

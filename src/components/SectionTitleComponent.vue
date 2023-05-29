@@ -34,12 +34,12 @@ export default {
 
 <style lang="scss" scoped>
 .sectionTitleBox {
-  background-image: url('src/assets/images/bg/bg_talking_c.png');
+  background-image: url('/images/bg/bg_talking_c.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
   @media (min-width: 992px) {
-    background-image: url('src/assets/images/bg/bg_talking.png');
+    background-image: url('/images/bg/bg_talking.png');
     width: fit-content;
   }
 }
