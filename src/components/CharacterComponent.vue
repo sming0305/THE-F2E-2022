@@ -1,5 +1,5 @@
 <template>
-  <div class="container fixed-bottom z--6">
+  <div class="container z--6">
     <div class="d-flex justify-content-center">
       <div
         class="position-relative"

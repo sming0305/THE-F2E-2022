@@ -13,7 +13,7 @@ export default defineStore('homeStore', {
     },
     changMapUrl() {
       this.mapFinish = !this.mapFinish
-    }
+    },
   },
   getters: {
     mapUrl: ({ mapFinish }) => {

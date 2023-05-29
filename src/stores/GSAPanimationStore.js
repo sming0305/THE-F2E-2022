@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 export default defineStore('GSAPanimationStore', {
   state: () => ({
     windowWidth: 0,
+    loadingTime: 0,
     animationElement: {
       section1: {},
       section2: {},
@@ -34,8 +35,8 @@ export default defineStore('GSAPanimationStore', {
     },
     getWindowWidth(value) {
       this.windowWidth = value
-      console.log(this.windowWidth)
     },
+    
     animation() {
       // 區塊
       const section1 = this.animationElement.section1
@@ -90,21 +91,19 @@ export default defineStore('GSAPanimationStore', {
         gsap.set(section9.finishLineLeft, { opacity: 0, x: '+=22', scale: 2 })
         gsap.set(section9.finishLineRight, { opacity: 0, x: '-=10', scale: 2 })
 
-
-        
         // 滑鼠移動時，角色跟著移動效果
         window.addEventListener('mousemove', (event) => {
           const mouseX = event.clientX // 滑鼠的 X 座標
-          // 判斷滑鼠移動的方向
+          // 判斷滑鼠移動的方向使角色移動
           if (mouseX > window.innerWidth / 2) {
-            // 滑鼠在畫面右側，目標往左移動
+
             gsap.to(section2.characterLeft, { x: '-30' })
-            gsap.to(section2.characterCenter, { x: '-30' })
+            gsap.to(section2.characterCenter, { x: '+15' })
             gsap.to(section2.characterRight, { x: '-30' })
           } else {
-            // 滑鼠在畫左側，目標往右移動
+
             gsap.to(section2.characterLeft, { x: '+30' })
-            gsap.to(section2.characterCenter, { x: '+30' })
+            gsap.to(section2.characterCenter, { x: '-15' })
             gsap.to(section2.characterRight, { x: '+30' })
           }
         })

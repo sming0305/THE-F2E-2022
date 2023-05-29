@@ -554,7 +554,7 @@
       </div>
     </div>
   </section>
-  <CharacterComponent />
+  <CharacterComponent class="fixed-bottom"></CharacterComponent>
   <TrafficLightComponent />
   <div ref="buttonEndHidden" data-sectionNum="10">
     <JoinButtonComponent
