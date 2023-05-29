@@ -5,13 +5,14 @@
 
 ### 作品說明:
 
-The F2E 活動旨在採UI、前端接力合作形式，前端工程師可採用 UI 設計師的設計稿，一同產出完整成果。
+The F2E 活動採UI、前端接力合作形式，前端工程師採用 UI 設計師設計稿，一同產出完整成果。
 
-作品使用 GSAP 來處理設計稿中的動畫，主要使用 GSAP 中的 scrollTrigger 搭配 TimeLIne 來達到滾輪控制動畫，並可以順向及反向播放，  
-並針對設計稿上的尺寸細節以及動畫做還原，且盡可能避免了如其他參賽者動畫持續及間隔過短的問題。
+作品使用 GSAP 來處理設計稿中的動畫，主要使用 GSAP 中的 scrollTrigger 搭配 TimeLIne 來達到滾輪控制動畫  
+，並可以順向及反向播放，並針對設計稿上的尺寸細節以及動畫做還原，  
+且盡可能避免了如其他參賽者動畫持續時間及間隔過短的問題。
 
 謝謝 EG 可愛的設計稿
-本作品為採用設計師 : [設計師 EG](https://2022.thef2e.com/users/12061549261454740203/) 設計。
+本作品為採用設計師 : [設計師 EG](https://2022.thef2e.com/users/12061549261454740203/) 設計。  
 設計稿網址 : [設計稿](https://www.figma.com/file/WI0JIDVCdIwHDFjAJQFaxK/EGs-F2E---Week1-%E6%B4%BB%E5%8B%95%E7%B6%B2%E7%AB%99%E8%A8%AD%E8%A8%88?type=design&node-id=41-1702&t=FTWQoNxG9nt5odNW-0)
 
 ### 本地運行:
