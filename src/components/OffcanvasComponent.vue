@@ -99,6 +99,7 @@
         style="width: 20px"
       />
       <div
+        class="controlBtn position-absolute"
         @mouseenter="
           (e) => {
             switchImage('entry', 0, e)
@@ -113,7 +114,7 @@
         <img
           src="/images/btn/btn_burger_open.png"
           alt="btn"
-          class="controlBtn position-absolute"
+          class=""
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrolling"
