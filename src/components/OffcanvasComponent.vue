@@ -115,7 +115,6 @@
           src="/images/btn/btn_burger_open.png"
           alt="btn"
           class="w-100"
-          type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrolling"
           aria-controls="offcanvasScrolling"
@@ -126,41 +125,6 @@
           "
         />
       </div>
-      <img
-          src="/images/btn/btn_burger_open.png"
-          alt="btn"
-          class="controlBtn2 position-absolute"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasScrolling"
-          aria-controls="offcanvasScrolling"
-          @click="
-            (e) => {
-              changeImage(e)
-            }
-          "
-        />
-
-      <img
-          src="/images/btn/btn_burger_open.png"
-          alt="btn"
-          class="controlBtn3 position-absolute"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasScrolling"
-          aria-controls="offcanvasScrolling"
-          @click="
-            (e) => {
-              changeImage(e)
-            }
-          "
-        />
-      <img
-          src="/images/btn/btn_burger_open.png"
-          alt="btn"
-          class="controlBtn4 position-absolute"
-          type="button"
-        />
     </div>
   </div>
 </template>
@@ -212,45 +176,6 @@ export default {
   height: 44.44px;
   right: -60px;
   top: 12px;
-
-  @media (min-width: 992px) {
-    width: 60px;
-    height: 66.67px;
-    right: -80px;
-    top: 53.7%;
-  }
-}
-.controlBtn2 {
-  width: 40px;
-  height: 44.44px;
-  right: -60px;
-  top: 62px;
-
-  @media (min-width: 992px) {
-    width: 60px;
-    height: 66.67px;
-    right: -80px;
-    top: 53.7%;
-  }
-}
-.controlBtn3 {
-  width: 60px;
-  height: 64.44px;
-  right: -80px;
-  top: 112px;
-
-  @media (min-width: 992px) {
-    width: 60px;
-    height: 66.67px;
-    right: -80px;
-    top: 53.7%;
-  }
-}
-.controlBtn4 {
-  width: 60px;
-  height: 64.44px;
-  right: -80px;
-  top: 182px;
 
   @media (min-width: 992px) {
     width: 60px;
