@@ -1,9 +1,9 @@
 <template>
   <LoginComponent />
-  <section class="overflow-hidden" style="width: 100%" ref="section1Box" data-sectionNum="1">
+  <section class="overflow-hidden z--18" style="width: 100%" ref="section1Box" data-sectionNum="1">
     <div class="container position-relative vh-100 pt-20 pt-lg-0">
       <div
-        class="position-absolute d-none d-lg-flex align-items-end h-100"
+        class="position-absolute  d-none d-lg-flex align-items-end h-100"
         ref="startLine"
         data-sectionNum="1"
       >
@@ -14,10 +14,10 @@
           style="object-fit: contain"
         />
       </div>
-      <div class="position-absolute cloud__left z--12" ref="cloudLeft" data-sectionNum="1">
+      <div class="position-absolute cloud__left z--18" ref="cloudLeft" data-sectionNum="1">
         <img src="/images/bg/bg_decorate_01.png" alt="cloud" />
       </div>
-      <div class="position-absolute cloud__right z--12" ref="cloudRight" data-sectionNum="1">
+      <div class="position-absolute cloud__right z--18" ref="cloudRight" data-sectionNum="1">
         <img src="/images/bg/bg_decorate_05.png" alt="cloud" />
       </div>
       <div class="d-flex justify-content-center" ref="sectionTextArea" data-sectionNum="1">

@@ -114,7 +114,7 @@
         <img
           src="/images/btn/btn_burger_open.png"
           alt="btn"
-          class=""
+          class="w-100"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrolling"
@@ -144,11 +144,15 @@ export default {
     ...mapActions(homeStore, ['switchImage']),
     changeImage(e) {
       const target = e.target
+
+      // 手指觸控時沒有mouseenter和mouseleave事件，設定一個正規表達式確保PC & 手機都能正常切換圖片
+      const regexOpen = /open(_h)?(\.png)$/
+      const regexClose = /close(_h)?(\.png)$/
       // 判斷offcanvas的連結開關按鈕換圖片
       this.offcanvasState = !this.offcanvasState
       this.offcanvasState === true
-        ? (target.src = target.src.replace('open_h.png', 'close.png'))
-        : (target.src = target.src.replace('close_h.png', 'open.png'))
+        ? (target.src = target.src.replace(regexOpen, 'close.png'))
+        : (target.src = target.src.replace(regexClose, 'open.png'))
     }
   }
 }
