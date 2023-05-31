@@ -7,7 +7,7 @@
       style="height: 148px; width: 200px; visibility: hidden;"
       ref="navPcLogo" data-sectionNum="1"
     />
-    <!-- <div class="d-block d-lg-none me-5"></div> -->
+    <div class="d-block d-lg-none me-5"></div>
     <img
       src="/images/logo/logo_text.png"
       alt="logo"
