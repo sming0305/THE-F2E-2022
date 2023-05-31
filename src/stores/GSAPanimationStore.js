@@ -36,7 +36,7 @@ export default defineStore('GSAPanimationStore', {
     getWindowWidth(value) {
       this.windowWidth = value
     },
-    
+
     animation() {
       // 區塊
       const section1 = this.animationElement.section1
@@ -96,12 +96,10 @@ export default defineStore('GSAPanimationStore', {
           const mouseX = event.clientX // 滑鼠的 X 座標
           // 判斷滑鼠移動的方向使角色移動
           if (mouseX > window.innerWidth / 2) {
-
             gsap.to(section2.characterLeft, { x: '-30' })
             gsap.to(section2.characterCenter, { x: '+15' })
             gsap.to(section2.characterRight, { x: '-30' })
           } else {
-
             gsap.to(section2.characterLeft, { x: '+30' })
             gsap.to(section2.characterCenter, { x: '-15' })
             gsap.to(section2.characterRight, { x: '+30' })
@@ -388,6 +386,7 @@ export default defineStore('GSAPanimationStore', {
           .to(section10.buttonEndHidden, { visibility: 'hidden' })
       } // 992px 以下版動畫
       else if (this.windowWidth < 992) {
+        gsap.set(section2.characterBox, { scale: 0.3 , y: '+=70' })
         gsap.set(section10.buttonEndHidden, { visibility: 'hidden', opacity: 0 })
         gsap.set(section3.item1, { opacity: 0, x: '+=100' })
         gsap.set(section3.item2, { opacity: 0, x: '-=100' })
@@ -480,7 +479,7 @@ export default defineStore('GSAPanimationStore', {
 
         section1Tl
           .to(section1.trafficBox, { opacity: 0 })
-          .to(section2.characterBox, { scale: 0.5, y: '+=50' }, '<')
+          .to(section2.characterBox, { scale: 0.5, y: '-=20' }, '<')
           .to(section10.buttonEndHidden, { visibility: 'visible', opacity: 1 }, '<')
 
         section2Tl
@@ -527,6 +526,5 @@ export default defineStore('GSAPanimationStore', {
           .to(section2.characterBox, { scale: 1, y: '-=60' })
       }
     }
-  },
-  getters: {}
+  }
 })
