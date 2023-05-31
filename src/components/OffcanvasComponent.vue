@@ -155,6 +155,12 @@
             }
           "
         />
+      <img
+          src="/images/btn/btn_burger_open.png"
+          alt="btn"
+          class="controlBtn4 position-absolute"
+          type="button"
+        />
     </div>
   </div>
 </template>
@@ -232,6 +238,19 @@ export default {
   height: 64.44px;
   right: -80px;
   top: 112px;
+
+  @media (min-width: 992px) {
+    width: 60px;
+    height: 66.67px;
+    right: -80px;
+    top: 53.7%;
+  }
+}
+.controlBtn4 {
+  width: 60px;
+  height: 64.44px;
+  right: -80px;
+  top: 182px;
 
   @media (min-width: 992px) {
     width: 60px;
